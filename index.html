@@ -3,69 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graphic Designer Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    nav li {
-      display: inline-block;
-      margin: 10px;
-    }
-    section {
-      padding: 50px;
-      text-align: center;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Graphic Designer Portfolio</h1>
     <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="container">
+        <h1 class="logo">Lance Randall</h1>
+        <ul class="nav-links">
+          <li><a href="#about">Work</a></li>
+          <li><a href="#skills">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+    <div class="hero">
+      <div class="container">
+        <h2>Designing for the future.</h2>
+        <p>Passionate about creating beautiful and functional websites.</p>
+      </div>
+    </div>
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>Write a brief introduction about yourself and your experience as a graphic designer.</p>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet, ipsum eu aliquet sagittis, risus turpis sollicitudin leo, at accumsan quam ligula sed ipsum.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Vision</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>UI/UX Design</li>
+        <li>Git</li>
+      </ul>
+    </div>
   </section>
 
   <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Showcase your best works here. You can use images, videos, or interactive elements to display your designs.</p>
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="portfolio-items">
+        <div class="item">
+          <img src="project1.jpg" alt="Project 1">
+          <div class="item-overlay">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="project2.jpg" alt="Project 2">
+          <div class="item-overlay">
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Include a contact form or provide your email address and social media links for potential clients to reach out to you.</p>
+    <div class="container">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2023 Graphic Designer Portfolio. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; LANCE RANDALL 2021. ALL RIGHTS RESERVED.
+.</p>
+    </div>
   </footer>
 </body>
 </html>
